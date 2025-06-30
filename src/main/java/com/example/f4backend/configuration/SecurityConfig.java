@@ -29,7 +29,7 @@ import java.util.List;
 public class SecurityConfig {
 
     private final String[] PUBLIC_ENDPOINTS = {
-            "/auth/**", "/ws/**", "/booking/**", "/auth/introspect", "/auth/logout", "/auth/refresh", "/users", "/driver/**" , "/images/**","/order/**"
+            "/auth/**", "/ws/**", "/booking/**", "/auth/introspect", "/auth/logout", "/auth/refresh", "/users/**", "/driver/**" , "/images/**","/order/**"
     };
     @Autowired
     private CustomJWTDecoder customJwtDecoder;

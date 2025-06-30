@@ -58,7 +58,7 @@ public class BookingController {
         List<String> nearbyDrivers = findNearbyDriversFiltered(
                 request.getPickupLatitude(),
                 request.getPickupLongitude(),
-                10000,
+                100000,
                 10,
                 request.getVehicleTypeId()
         );

@@ -40,7 +40,6 @@ public class BookingService {
         detail.setDescriptionNotes(dto.getDescriptionNotes());
         booking.setBookingDetail(detail);
 
-        // find and add status "PENDING"
         BookingStatus status = bookingStatusRepository
                 .findByStatusNameIgnoreCase("PENDING")
                 .orElseGet(() -> {
